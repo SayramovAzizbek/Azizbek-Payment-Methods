@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <main>
+        <section id="payment">
+            <div class="container">
+                <div class="payment-part">
+                    <h1 class="visually-hidden">Visually-Hidden</h1>
+                    <h2>PAYMENT METHODS</h2>
+                    <form class="payment-form" action="https://echo.htmlacademy.ru/courses" method="post"
+                        autocomplete="off">
+                        <label class="payment-label">VISA
+                            <input class="payment-input visually-hidden " type="radio" name="payment-method"
+                                value="visa" aria-label="payment-methods" id="payment">
+                            <span class="input-tick"></span>
+                        </label>
+                        <label class="payment-label master-card">MASTERCARD
+                            <input class="payment-input visually-hidden" type="radio" name="payment-method"
+                                value="master-card" aria-label="payment-methods" id="payment">
+                            <span class="input-tick"></span>
+                        </label>
+                        <label class="payment-label mastero">MAESTRO
+                            <input class="payment-input visually-hidden" type="radio" name="payment-method"
+                                aria-label="payment-methods" value="maestero" id="payment">
+                            <span class="input-tick"></span>
+                        </label>
+                        <button class="payment-btn" type="submit">Next Step</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

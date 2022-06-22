@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#payment {
+    padding: 200px 0 193px 0;
+    background-image: url('../images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.payment-part {
+    margin: 0 auto;
+    width: 400px;
+    padding: 40px 0 0 0;
+    background-color: #fff;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.payment-part h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.payment-label {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid #c4c4c48a;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.payment-label::before {
+    content: '';
+    display: inline-block;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/visa.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.master-card::before {
+    background-image: url('../images/mastercard.svg');
+}
+
+.mastero::before {
+    background-image: url('../images/maestro.svg');
+}
+
+.payment-input {
+    margin-left: auto;
+}
+
+.payment-input:checked ~ .input-tick{
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/check.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.payment-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    padding: 20px 0;
+    background-color: #0000ff;
+    border: none;
+}
+
+.payment-btn::after {
+    content: '';
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/arrow.svg');
+    background-size: contain;
+}
